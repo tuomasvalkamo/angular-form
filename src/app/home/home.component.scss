@@ -1,35 +1,35 @@
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.user-grid {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  width: 100%;
+  max-width: 100%;
 
-  li {
-    background: rgb(238, 238, 238);
-    padding: 2em;
-    border-radius: 4px;
-    margin-bottom: 7px;
-    display: grid;
-    grid-template-columns: 60px auto;
+  .user-item {
+    background: #f5f5f5;
+    padding: 60px 40px;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    border-top: 8px solid #7700ff;
 
-    > * {
-      align-self: center;
+    img {
+      margin-bottom: 20px;
     }
 
     p {
-      margin: 5px 0 0 20px;
-    }
-
-    img {
-      border-radius: 50%;
-      width: 100%;
+      margin: 0;
     }
 
     .user-name {
       font-weight: 700;
+      margin-bottom: 10px;
     }
 
     .user-email {
       font-weight: 400;
+      font-size: 0.8em;
     }
   }
 }
