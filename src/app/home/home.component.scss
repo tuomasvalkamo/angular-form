@@ -11,14 +11,25 @@ ul {
     display: grid;
     grid-template-columns: 60px auto;
 
+    > * {
+      align-self: center;
+    }
+
     p {
-      font-weight: bold;
-      margin-left: 20px;
+      margin: 5px 0 0 20px;
     }
 
     img {
       border-radius: 50%;
       width: 100%;
+    }
+
+    .user-name {
+      font-weight: 700;
+    }
+
+    .user-email {
+      font-weight: 400;
     }
   }
 }

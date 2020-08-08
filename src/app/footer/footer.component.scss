@@ -1,0 +1,28 @@
+footer {
+  background: #7700ff;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+
+    li {
+      list-style: none;
+    }
+  }
+
+  .yla-footer {
+    padding: 50px 0 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+  }
+
+  .ala-footer {
+    font-size: 14px;
+  }
+}

@@ -3,6 +3,9 @@
 <ul *ngIf="users">
     <li *ngFor="let user of users.data">
         <img [src]="user.avatar">
-        <p>{{ user.first_name }} {{ user.last_name }}</p>
+        <div>
+            <p class="user-name">{{ user.first_name }} {{ user.last_name }}</p>
+            <p class="user-email">{{ user.email }}</p>
+        </div>
     </li>
 </ul>
