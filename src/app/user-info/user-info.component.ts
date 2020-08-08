@@ -2,12 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+  selector: 'app-user-info',
+  templateUrl: './user-info.component.html',
+  styleUrls: ['./user-info.component.scss'],
 })
-export class HomeComponent implements OnInit {
+export class UserInfoComponent implements OnInit {
   users: Object;
+
   windowVisible: boolean = false;
 
   constructor(private data: DataService) {}
@@ -15,11 +16,6 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.data.getUsers().subscribe((data) => {
       this.users = data;
-      console.log(this.users);
     });
-  }
-
-  changeWindowStatus() {
-    this.windowVisible = true;
   }
 }
